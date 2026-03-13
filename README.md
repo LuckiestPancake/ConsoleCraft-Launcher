@@ -31,6 +31,9 @@ A Minecraft Legacy Console Edition Launcher, that tries to make everything easy 
 
 To build it just run `npm run dist`
 
+# Contributing
+Anyone can submit issues or pull request to try to help with the project
+
 # Developed
 Created by LuckiestPancake, this launcher was built using Electron, HTML, CSS, and JavaScript.
 Credits to **LegacyLauncher** for being an excellent resource while experimenting with and studying its source helped me learn how to implement features into my own launcher.
