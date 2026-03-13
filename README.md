@@ -25,4 +25,6 @@ A Minecraft Legacy Console Edition Launcher, that tries to make everything easy 
 - [ ] Instances Menu
 
 # Developed
-Created by LuckiestPancake this launcher was made in electron, html, css, js
+Created by LuckiestPancake, this launcher was built using Electron, HTML, CSS, and JavaScript.
+Credits to **LegacyLauncher** for being an excellent resource while experimenting with and studying 
+its source helped me learn how to implement features into my own launcher.
