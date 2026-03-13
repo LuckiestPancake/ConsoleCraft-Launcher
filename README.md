@@ -21,6 +21,8 @@ A Minecraft Legacy Console Edition Launcher, that tries to make everything easy 
 # To-Do
 - [ ] Linux
 - [ ] Mac OS
+- [ ] Profile Menu
+- [ ] Instances Menu
 
 # Developed
 Created by LuckiestPancake this launcher was made in electron, html, css, js
