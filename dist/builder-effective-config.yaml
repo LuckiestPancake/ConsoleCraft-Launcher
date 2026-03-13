@@ -2,7 +2,7 @@ directories:
   output: dist
   buildResources: build
 appId: com.consolecraft.launcher
-productName: ConsoleCraft Launcher
+productName: ConsoleCraft_Launcher
 files:
   - filter:
       - '**/*'

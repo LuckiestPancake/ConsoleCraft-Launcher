@@ -6,9 +6,7 @@ const extractZip = require("extract-zip");
 const { exec } = require("child_process");
 
 const dl = "https://github.com/smartcmd/MinecraftConsoles/releases/download/nightly/LCEWindows64.zip";
-const gmdir = path.join(__dirname, "gmdir");
-const exepath = path.join(gmdir, "Minecraft.Client.exe");
-const skinpath = path.join(gmdir, "Common", "res", "mob", "char.png");
+let gmdir, exepath, skinpath;
 
 const playBtn = document.getElementById("play-button");
 const importBtn = document.getElementById("import-skin-button");
@@ -16,16 +14,23 @@ const saveBtn = document.getElementById("save-profile-button");
 const nameInp = document.querySelector(".input-wide");
 
 async function init() {
+  const userData = await ipcRenderer.invoke("get-app-path");
+  gmdir = path.join(userData, "game");
+  exepath = path.join(gmdir, "Minecraft.Client.exe");
+  skinpath = path.join(gmdir, "Common", "res", "mob", "char.png");
+
   const name = await ipcRenderer.invoke("store-get", "username");
   if (name) nameInp.value = name;
 }
 
 saveBtn.onclick = async () => {
+  if (!gmdir) return;
   await ipcRenderer.invoke("store-set", "username", nameInp.value);
   alert("Profile saved!");
 };
 
 importBtn.onclick = async () => {
+  if (!gmdir) return;
   const file = await ipcRenderer.invoke("select-skin");
   if (!file) return;
 
@@ -54,6 +59,7 @@ importBtn.onclick = async () => {
 };
 
 playBtn.onclick = async () => {
+  if (!gmdir) return;
   if (!fs.existsSync(exepath)) {
     playBtn.querySelector("p").innerText = "Downloading...";
     playBtn.style.pointerEvents = "none";

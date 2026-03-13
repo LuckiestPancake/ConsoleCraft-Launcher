@@ -1,6 +1,6 @@
 {
 "name": "cc-launcher",
-"productName": "ConsoleCraft Launcher",
+"productName": "ConsoleCraft_Launcher",
 "author": "LuckiestPancake",
 "description": "A Minecraft launcher for Legacy Console Edition that tries to add quality of life features and simplisitc!",
 "version": "1.0.0",
@@ -19,7 +19,7 @@
 },
 "build": {
 "appId": "com.consolecraft.launcher",
-"productName": "ConsoleCraft Launcher",
+"productName": "ConsoleCraft_Launcher",
 "directories": {
 "output": "dist"
 },

@@ -52,6 +52,7 @@ ipcMain.handle("select-skin", async () => {
 
 ipcMain.handle("store-get", (event, key) => store.get(key));
 ipcMain.handle("store-set", (event, key, value) => store.set(key, value));
+ipcMain.handle("get-app-path", () => app.getPath("userData"));
 
 app.on("ready", createWindow);
 
