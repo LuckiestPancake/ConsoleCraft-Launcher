@@ -2,7 +2,7 @@
 
 # ConsoleCraft Launcher
 
-![Launcher Screenshot](.github/screenshot.png)
+![Launcher Screenshot](.github/screenshot_2.png)
 
 A Minecraft Legacy Console Edition Launcher, that tries to make everything easy to use and adds quality of life features!
 
@@ -26,5 +26,4 @@ A Minecraft Legacy Console Edition Launcher, that tries to make everything easy 
 
 # Developed
 Created by LuckiestPancake, this launcher was built using Electron, HTML, CSS, and JavaScript.
-Credits to **LegacyLauncher** for being an excellent resource while experimenting with and studying 
-its source helped me learn how to implement features into my own launcher.
+Credits to **LegacyLauncher** for being an excellent resource while experimenting with and studying its source helped me learn how to implement features into my own launcher.
