@@ -25,6 +25,7 @@ body {
     user-select: none;
     margin: 0;
     padding: 0;
+    font-family: 'minecraft', sans-serif;
 }
 
 .launcher-options-bottom {
@@ -34,11 +35,59 @@ body {
     display: flex;
     gap: 20px;
     flex-direction: row;
-    justify-content:space-evenly ;
+    justify-content:space-between ;
+    width: 100vw;
+}
+
+.launcher-options-top {
+    position: absolute;
+    top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly ;
     width: 100vw;
 }
 
 
+.bottom-section {
+    margin-top: auto;
+    padding: 20px;
+
+    border-radius: 8px;
+    z-index: 0;
+    
+}
+
+.play-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.play-buttons .button-wide {
+    margin-bottom: 10px;
+}
+
+
+.player-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: auto;
+    margin-left: 70px;
+}
+
+.button-medium {
+    width: 130px !important;
+    height: 20px !important;
+}
 
 
 .input-wide {
@@ -63,6 +112,44 @@ body {
     
 }
 
+.button-small p {
+    font-family: 'minecraft', sans-serif;
+    font-size: 8px;
+    color: white;
+    text-shadow: 1px 1px 0px #3f3f3f; 
+    margin-bottom: 2.3px;
+}
+
+.discord-button {
+    color: aqua !important;
+}
+
+.button-small {
+    background: url("media/buttons/textures/default-small.png") no-repeat center center;
+    background-size: 100% 100% !important;
+    width: 20px;
+    height: 20px;
+    transform: scale(2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.05s ease-in-out;
+}
+
+.button-small:hover {
+    cursor: pointer;
+    background: url("media/buttons/textures/hover-small.png") no-repeat center center;
+}
+
+.button-small:active {
+    background: url("media/buttons/textures/clicked-small.png") no-repeat center center;
+}
+
 .button-wide {
     background: url("media/buttons/textures/default-wide.png") no-repeat center center;
     background-size: 100% 100% !important;
@@ -83,6 +170,7 @@ body {
 
 
 }
+
 
 .button-wide p {
     font-family: 'minecraft', sans-serif;
@@ -106,6 +194,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: scale(1.1);
 }
 
 .play-section-title {
@@ -139,12 +228,3 @@ body {
     text-shadow: 1px 1px 0px #242424; 
 }
 
-h1 {
-    font-family: 'minecraft', sans-serif;
-    font-size: 20px;
-    color: white;
-    text-shadow: 6px 6px 0px #3f3f3f; 
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
